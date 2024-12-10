@@ -1,0 +1,83 @@
+/* Container Styling */
+.ClientForm-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.ClientForm-heading {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.ClientForm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Fields */
+.ClientForm-input,
+.ClientForm-textarea,
+.ClientForm-file {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #555;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.ClientForm-input:focus,
+.ClientForm-textarea:focus,
+.ClientForm-file:focus {
+  border: 1px solid #0056b3;
+  outline: none;
+}
+
+/* Textarea */
+.ClientForm-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Submit Button */
+.ClientForm-submit {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ClientForm-submit:hover {
+  background-color: #004494;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .ClientForm-container {
+    padding: 15px;
+  }
+
+  .ClientForm-heading {
+    font-size: 1.25rem;
+  }
+
+  .ClientForm-submit {
+    font-size: 0.9rem;
+  }
+}
